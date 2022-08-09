@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="weather">
+        <div class="container">
+            <head>
+                <div class="weather_header">
+                    <p class="header_title ocean_color ">MY WEATHER</p>
+                    <div class="inputCity">
+                        <input type="text" name="" id="findCity"  class = "search_city" placeholder="Search">
+                        <label for="searchCity"><i class='bx bx-search search_icon' id = 'searchBtn' ></i></label>
+                    </div>
+                </div>
+                    <div class="header_nav">
+                        <ul class="header_nav_list">
+                            <li class="tablinks" data-tablinks onclick="openTable(event, 'currCity')"><a href="" style="user-select: none;">Today</a></li>
+                            <li class= "tablinks" data-tablinks onclick="openTable(event, 'daysForecast')"><a href="" style="user-select: none;">5-day forecast</a></li>
+                        </ul>
+                    </div>
+            </head>
+            <main class="tabs__content">
+                <div class="tabcontent" id = "currCity">
+                    <div class="weather_currCity">
+                        <div class="about_request">
+                            <div class="city_name ocean_color">CURRENT WEATHER</div>  
+                            <div class="currDate ocean_color"></div>
+                        </div>
+                            <div class="main_weatherInfo">
+                                <div class="currState">
+                                    <div class="currState_img"></div>
+                                    <p class="currState_info bold"></p>
+                                </div>
+                                <div class="currTemeprature">
+                                    <p class="currTemeprature_info"></p>
+                                    <p class="curr_feelings grey"></p>
+                                </div>
+                                <div class="extra_info">
+                                    <p>Sunrise <span id="sunrise"></span></p>
+                                    <p>Sunset <span id="sunset"></span></p>
+                                    <p>Duration <span id="duration"></span></p>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="hourly_weather">
+                        <h3 class="ocean_color hourly_weather-titel">Hourly</h3>
+                        <div class="hourly_weather_info">
+                            <div class="hourly_options">
+                                <p class="curr_day bold ">Today</p>
+                                <div class="options">
+                                    <p class="forecast grey">Forecast</p>
+                                    <p class="day_temperature grey">Temp(C)</p>
+                                    <p class="hourly_real_feels grey">RealFeel</p>
+                                    <p class="wind_speed grey">Wind(km/h)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nearby_cities">
+                        <h3 class="ocean_color nearby_cities-titel">Nearby Places</h3>
+                        <div class="cities"></div>
+                    </div>
+                </div>
+                <div class="tabcontent"  id = "daysForecast">
+                    <div class="days_forecast">
+                    </div>
+                    <div class="hourly_weather">
+                        <h3 class="ocean_color hourly_weather-titel">Hourly</h3>
+                        <div class="hourlyDaily_weather_info">
+                            <div class="hourly_options">
+                                <p class="curr_day bold ">Today</p>
+                                <div class="options">
+                                    <p class="forecast grey">Forecast</p>
+                                    <p class="day_temperature grey">Temp(C)</p>
+                                    <p class="hourly_real_feels grey">RealFeel</p>
+                                    <p class="wind_speed grey">Wind(km/h)</p>
+                                </div>
+                            </div>
+                            <div class="weather_blocks-row"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div class="error_block">
+                <span>404</span>    
+                <p class="error_message">Not found</p>
+                <p class="recomindation">Please enter a different city</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

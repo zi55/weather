@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css    ">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 style="color:cadetblue;">CURRENT WEATHER</h1>
+            </div>
+            <div class="inp_wrap"> <input type="text" id="searchs" value="london"> <button id="sea">Search</button></div>
+        </div>
+        <div class="info">
+            <h2 class="city"></h2>
+        </div>
+        <div class="parent">
+            <div class="cur_wrap" Google Geocoding APIid="cur_wrap">
+                <div class="current_weather"> 
+                    <div class="wrapper">
+                        <div id="icons"></div>
+                        <div id="tempr"></div>
+                        <div id="sunrise"></div>
+                    </div>
+                </div>
+                <div style="margin-top: 30px;">
+                    <div class="current_weather">
+                        <h2>HOURLY</h2>
+                        <div class="today" id="todays">
+                            <div>
+                                <h3>Today</h3>
+                            </div>
+                        </div>
+                        <div class="today" id="forcats">
+                            <p>Forecast</p>
+                        </div>
+                        <div class="today" id="tempred">
+                            <p>Temp (C)</p>
+                        </div>
+                        <div class="today" id="feels">
+                            <p>RealFeel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="main.js"></script>
+</body>
+
+</html>

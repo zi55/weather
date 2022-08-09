@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    background: url(../img/kanada-vankuver-noch-zdaniya-ogni-otrazhenie-voda-lodki-most-prichal.jpg);
+    max-width: 100%;
+ 
+}
+
+#tempr{
+    margin-right: 340px;
+}
+
+h2{
+    color: cadetblue;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+ 
+
+.dated {
+    padding: 0px 15px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s linear;
+}
+
+.dated:hover {
+    border-bottom: 2px solid cadetblue;
+}
+
+.parent {
+    background-color: lightgray;
+    padding: 30px;
+}
+
+.current_weather {
+    background-color: white;
+    padding: 10px 20px;
+}
+.current{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.musor {
+    text-align: center;
+}
+
+.today {
+    display: flex;
+    justify-content: space-between;
+}
+
+.directed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 42px;
+}
+
+.ter {
+    margin-right: 20px;
+}
+
+.mrg {
+    margin-right: 30px;
+}
+
+.card_cont {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    cursor: pointer;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px 50px;
+    border-right: 1px solid lightgray;
+    transition: all 0.3s linear;
+}
+
+.cards:hover {
+    background-color: white;
+}
+
+ 

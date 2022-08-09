@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+ul{
+    list-style: none;
+}
+input{
+    outline:none;
+}
+
+.ocean_color{
+    color: rgb(0, 167, 167);
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+}
+.weather_header{
+    padding-block: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_title{
+    font-size: 1.5rem;
+}
+.header_nav{    
+    background-color: rgb(73, 73, 73);
+}
+.header_nav_list{
+
+    display: flex;
+    align-items: center;
+}
+.header_nav_list li {
+    padding: 20px;
+    height: 100%;
+    transition: all 0.4s ;
+}
+.header_nav_list li:hover{
+    background-color: rgb(90, 90, 90);
+}
+.search_city{
+    border: none;
+    user-select: none;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 2px solid rgb(106, 216, 218);
+}
+.search_icon{
+    padding-top: 10px;
+    font-size: 1.4rem;
+    color: orange;
+    cursor: pointer;
+}
+.weather_currCity{
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.about_request{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.main_weatherInfo{
+    display: flex;
+    justify-content: space-between;
+}
+#maxTemp, #minTemp, #windSpeed{
+    margin-left: 10px;
+}
+.currState, .currTemeprature, .extra_info{
+    flex-basis: 30%;
+}
+.extra_info p{
+    padding: 10px;
+}
+
+.hourly_weather{
+    padding: 20px;
+    background-color: #fff;
+}
+.hourly_weather_info, .weather_blocks-row{
+    display: flex;
+    justify-content: space-between; 
+}
+.hourly_options{
+    flex-basis: 12%;
+}
+.weather_blocks-row{
+    flex-basis: 88%;
+}
+.hourlyDaily_weather_info{
+    display: flex;
+}
+.time_interval{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hourly_options{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.error_block{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(220, 220, 220);
+    display: none ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error_block span{
+    font-size: 3rem;
+
+    color: orange;
+}
+.error_message{
+    font-weight: 300;
+    color: rgb(100, 97, 97);
+    font-size: 2.3rem;
+
+}
+.recomindation{
+    font-weight: 300;
+    color: rgb(100, 97, 97);
+    font-size: 1.9rem;
+    margin-top: 20px;
+}
+.grey{
+    color: rgb(113, 113, 113);
+}
+.cities{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px ;
+}
+.nearby_city_img{
+    width: 50px;
+    height: 50px;
+}
+.nearby_city-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    padding-block: 5px;
+}
+.weather_conditions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.active{
+    background-color: rgb(90, 90, 90);
+}
+#daysForecast{
+    display: none;
+}
+.days_forecast{
+    display: flex;
+    
+    justify-content:center;
+}
+.day_interval{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-inline: 1px solid grey;
+    flex-basis: 25%;
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin-inline: auto;
+}
+.tabs{
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.tabs__header{
+    min-height: 100%;
+    width: 250px;
+    background-color: rgb(136, 136, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.tabs__header-item{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .4s;
+    
+}
+.tablinks{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .4s;
+    border: none;
+    background-color:rgb(58, 58, 243);
+    height: 100%;
+    border-bottom: 1px solid #000;
+     
+}
+.tablinks:hover{
+    background-color: rgb(161, 161, 236);
+}
+.tabs__content{
+    background-color:rgb(169, 169, 255);
+    color: #313131;
+    padding: 10px;
+}
+.tabs__content-item p{
+    line-height: 1.5;
+    font-size: 18px;
+}
